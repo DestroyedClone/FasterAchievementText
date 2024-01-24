@@ -14,7 +14,7 @@ using UnityEngine.AddressableAssets;
 
 namespace FasterAchievementText
 {
-    [BepInPlugin("com.DestroyedClone.FasterAchievementText", "Faster Achievement Text", "0.0.0")]
+    [BepInPlugin("com.DestroyedClone.FasterAchievementText", "Faster Achievement Text", "0.0.1")]
     public class Plugin : BaseUnityPlugin
     {
         public static ConfigEntry<bool> cfgEnableBlur;
@@ -46,7 +46,7 @@ namespace FasterAchievementText
 
         private void CfgEnableSound_SettingChanged(object _, EventArgs e)
         {
-            if (cfgEnableSound.Value)
+            if (!cfgEnableSound.Value)
             {
                 if (!subscribedToDisablingSound)
                 {

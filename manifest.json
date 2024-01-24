@@ -1,0 +1,9 @@
+{
+  "name": "FasterAchievementText",
+  "version_number": "0.0.1",
+  "website_url": "https://github.com/DestroyedClone/FasterAchievementText",
+  "description": "Shortens achievement popups.",
+  "dependencies": [
+    "bbepis-BepInExPack-5.4.9"
+  ]
+}
